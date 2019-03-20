@@ -1,0 +1,22 @@
+
+default: &default
+  adapter: mysql2
+  host: <%= ENV.fetch('DB_HOST') { 'localhost' } %>
+  pool: <%= ENV.fetch('RAILS_MAX_THREADS') { 45 } %>
+  database: <%= ENV.fetch('DB_NAME')  {'my_apis_d'}%>
+  port: <%= ENV.fetch('DB_PORT') { 3360 } %>
+  username: <%= ENV.fetch('DB_USERNAME') { 'root' } %>
+  password: <%= ENV.fetch('DB_PASSWORD') { 'root' } %>
+
+development:
+  <<: *default
+
+
+test:
+  <<: *default
+  database: my_apis_t
+
+staging:
+  <<: *default
+production:
+  <<: *default
