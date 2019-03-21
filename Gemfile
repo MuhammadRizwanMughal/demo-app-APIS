@@ -11,6 +11,8 @@ gem 'mysql2'
 gem 'puma', '~> 3.11'
 gem 'dotenv'
 gem 'rack-cors', require: 'rack/cors'
+gem 'devise'
+gem 'devise_token_auth'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -26,6 +28,8 @@ gem 'rack-cors', require: 'rack/cors'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'omniauth'
+
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
