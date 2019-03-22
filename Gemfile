@@ -29,6 +29,8 @@ gem 'devise_token_auth'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'omniauth'
+gem "paperclip", "~> 6.0.0"
+
 
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
